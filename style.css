@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300&family=Righteous&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body{
+  background: rgb(34, 34, 34);
+}
+  
+.img-wrapper img{
+  
+  width: 100%;
+  height: 100%;
+  background: url(./img/bg.jpg);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+  object-fit: cover;
+  opacity: 0.3;
+  
+
+  
+}
+
+.box{
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.384);
+  box-shadow: 0.3rem 0.3rem  rgba(37, 37, 37, 0.212);
+  border-radius:  0.5rem;
+  text-align: center;
+  
+}
+h1{
+  font-size: 1.5rem;
+  font-family: 'Righteous';
+  color: #fff;
+  font-weight: lighter;
+  text-shadow: 0.3rem 0.3rem rgba(30, 30, 30, 0.2);
+  margin-bottom: 40px;
+  
+}
+
+.box input[type = "text"], .box input[type = "password"]{
+  border: 0;
+  font-size: 1rem;
+  background: none;
+  text-align: center;
+  display: block;
+  border: 2px solid #7F01F5;
+  margin: 15px auto;
+  outline-style: none;
+  width: 200px;
+  color: #fff;
+  padding: 14px 10px;
+  transition: 0.25s;
+  border-radius: 3rem;
+}
+.box input[type = "text"]:focus, .box input[type = "password"]:focus{
+  width: 290px;
+  border-color: #01F4A5;
+}
+
+.box input[type = "submit"]{
+  border: 0;
+  font-family: 'Lexend';
+  font-size: 1rem;
+  background: none;
+  text-align: center;
+  display: block;
+  border: 2px solid #7F01F5;
+  margin: 15px auto;
+  outline-style: none;
+  color: #fff;
+  padding: 10px 40px;
+  cursor: pointer;
+  transition: 0.35s;
+  border-radius: 2rem;
+
+}
+
+.box input[type = "submit"]:hover{
+  background:#01F4A5;
+  
+}
